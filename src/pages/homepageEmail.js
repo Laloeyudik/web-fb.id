@@ -51,11 +51,11 @@ function HomePageEmail() {
     const isTimes = timer.minutes === 0 && timer.seconds === 0;
     return (
         <div className='flex justify-center  items-center w-full'>
-            <form className='p-4 bg-white rounded-md  border border-gray-300' >
+            <form className='max-w-sm p-4 bg-white rounded-md  border border-gray-300 object-cover overflow-hidden' >
 
-                <div className="sm:w-[400px] ">
-                    <div className="sm:col-span-4 ">
-                        <div className='' dangerouslySetInnerHTML={{ __html: slider }} />
+                <div className="block justify-center  ">
+                    <div className="">
+                        <div className='flex object-cover  overflow-hidden w-auto h-auto' dangerouslySetInnerHTML={{ __html: slider }} />
                         {/* <img src={iconBeners} /> */}
                     </div>
 
